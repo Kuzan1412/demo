@@ -1,0 +1,7 @@
+F:\Jigoku koori\C#\C#OOP\Library\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+F:\Jigoku koori\C#\C#OOP\Library\Library\obj\Debug\Library.MainForm.resources
+F:\Jigoku koori\C#\C#OOP\Library\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+F:\Jigoku koori\C#\C#OOP\Library\Library\bin\Debug\Library.exe
+F:\Jigoku koori\C#\C#OOP\Library\Library\bin\Debug\Library.pdb
+F:\Jigoku koori\C#\C#OOP\Library\Library\obj\Debug\Library.exe
+F:\Jigoku koori\C#\C#OOP\Library\Library\obj\Debug\Library.pdb
