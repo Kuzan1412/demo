@@ -5,3 +5,10 @@ F:\Jigoku koori\C#\C#OOP\CANBO\CANBO\obj\Debug\CANBO.MainForm.resources
 F:\Jigoku koori\C#\C#OOP\CANBO\CANBO\obj\Debug\CANBO.csproj.GenerateResource.Cache
 F:\Jigoku koori\C#\C#OOP\CANBO\CANBO\obj\Debug\CANBO.exe
 F:\Jigoku koori\C#\C#OOP\CANBO\CANBO\obj\Debug\CANBO.pdb
+F:\demo\STAFF\CANBO\bin\Debug\CANBO.exe
+F:\demo\STAFF\CANBO\bin\Debug\CANBO.pdb
+F:\demo\STAFF\CANBO\obj\Debug\CANBO.csprojResolveAssemblyReference.cache
+F:\demo\STAFF\CANBO\obj\Debug\CANBO.MainForm.resources
+F:\demo\STAFF\CANBO\obj\Debug\CANBO.csproj.GenerateResource.Cache
+F:\demo\STAFF\CANBO\obj\Debug\CANBO.exe
+F:\demo\STAFF\CANBO\obj\Debug\CANBO.pdb

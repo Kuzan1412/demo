@@ -150,20 +150,17 @@ namespace CANBO
 				if (rdbEngine.Checked == true)
 				{
 					scan = 1;
-					txtLv.Text = "";
-					txtMisson.Text = "";
+					
 				}
 				if (rdbWaiter.Checked == true)
 				{
 					scan = 2;
-					txtMajor.Text = "";
-					txtLv.Text = "";
+					
 				}
 				if (rdbWorker.Checked == true)
 				{
 					scan = 3;
-					txtMajor.Text = "";
-					txtMisson.Text = "";
+					
 				}
 				if (rdbGirl.Checked == true)
 				{
@@ -371,6 +368,37 @@ namespace CANBO
 			}catch
 			{
 				
+			}
+			
+		}
+		
+		void RdbEngineCheckedChanged(object sender, EventArgs e)
+		{
+			if (rdbEngine.Checked == true)
+			{
+				txtLv.Visible = false;
+				txtMisson.Visible = false;
+				txtMajor.Visible = true;
+			}
+		}
+		
+		void RdbWaiterCheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbWaiter.Checked == true)
+			{
+				txtMajor.Visible = false;
+				txtLv.Visible = false;
+				txtMisson.Visible = true;
+			}
+		}
+		
+		void RdbWorkerCheckedChanged(object sender, EventArgs e)
+		{
+			if(rdbWorker.Checked == true)
+			{
+				txtMajor.Visible = false;
+				txtMisson.Visible = false;
+				txtLv.Visible = true;
 			}
 			
 		}

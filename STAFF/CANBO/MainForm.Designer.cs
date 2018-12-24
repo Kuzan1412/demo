@@ -91,6 +91,7 @@ namespace CANBO
 			this.rdbWaiter.TabStop = true;
 			this.rdbWaiter.Text = "Waiter";
 			this.rdbWaiter.UseVisualStyleBackColor = true;
+			this.rdbWaiter.CheckedChanged += new System.EventHandler(this.RdbWaiterCheckedChanged);
 			// 
 			// rdbWorker
 			// 
@@ -100,6 +101,7 @@ namespace CANBO
 			this.rdbWorker.TabIndex = 2;
 			this.rdbWorker.Text = "Woker";
 			this.rdbWorker.UseVisualStyleBackColor = true;
+			this.rdbWorker.CheckedChanged += new System.EventHandler(this.RdbWorkerCheckedChanged);
 			// 
 			// rdbEngine
 			// 
@@ -109,6 +111,7 @@ namespace CANBO
 			this.rdbEngine.TabIndex = 3;
 			this.rdbEngine.Text = "Engineer";
 			this.rdbEngine.UseVisualStyleBackColor = true;
+			this.rdbEngine.CheckedChanged += new System.EventHandler(this.RdbEngineCheckedChanged);
 			// 
 			// rdbBoy
 			// 
