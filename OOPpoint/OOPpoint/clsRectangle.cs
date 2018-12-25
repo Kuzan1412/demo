@@ -51,7 +51,23 @@ namespace OOPpoint
 				C = value;
 			}
 		}
-		
+		public static double Space(clsPoint xA, clsPoint xB)
+		{
+			return Math.Sqrt(Math.Pow(xB.ix - xA.ix, 2) + Math.Pow(xB.iy - xA.iy, 2));
+		}
+		public static double perimeter(clsPoint xA, clsPoint xB, clsPoint xC)
+		{
+			double p;
+			p = (Space(xA, xB) + Space(xA, xC) + Space(xB, xC));
+			return p;
+		}
+		public static double area(clsPoint xA, clsPoint xB, clsPoint xC)
+		{
+			double p = perimeter(xA, xB, xC)/2;
+			
+			double area = Math.Sqrt(p*(p-Space(xA,xB))*(p-Space(xA, xB))*(p-Space(xB, xC)));
+			return area;
+		}
 		public clsRectangle(clsPoint xA, clsPoint xB, clsPoint xC)
 		{
 			A = xA;

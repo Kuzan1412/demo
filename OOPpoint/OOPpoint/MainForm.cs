@@ -34,7 +34,13 @@ namespace OOPpoint
 		{
 			
 		}
-		
+		public void Space(clsPoint xA, clsPoint xB, clsPoint xC)
+		{
+			
+			txtBC.Text = clsRectangle.Space(xB, xC).ToString();
+			txtAB.Text = clsRectangle.Space(xA, xB).ToString();
+			txtAC.Text = clsRectangle.Space(xA, xC).ToString();
+		}
 		void TextBox1TextChanged(object sender, EventArgs e)
 		{
 			try
@@ -103,25 +109,32 @@ namespace OOPpoint
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			clsPoint a = new clsPoint();
-			clsPoint b = new clsPoint();
-			clsPoint c = new clsPoint();
-			a.ix = int.Parse(txtAx.Text);
-			a.iy = int.Parse(txtAy.Text);
-			b.iy = int.Parse(txtBy.Text);
-			b.ix = int.Parse(txtBx.Text);
-			c.ix = int.Parse(txtCx.Text);
-			c.iy = int.Parse(txtCy.Text);
-			double AB, AC, BC, p;
-			AB = Math.Sqrt(Math.Pow(b.ix - a.ix, 2) + Math.Pow(b.iy - a.iy, 2));
-			AC = Math.Sqrt(Math.Pow(c.ix - a.ix, 2) + Math.Pow(c.iy - a.iy, 2));
-			BC = Math.Sqrt(Math.Pow(c.ix - b.ix, 2) + Math.Pow(c.iy - b.iy, 2));
-			txtBC.Text = BC.ToString();
-			txtAB.Text = AB.ToString();
-			txtAC.Text = AC.ToString();
-			p =  (AB+AC+BC)/2;
-			txtPerimeter.Text = (AB+AC+BC).ToString();
-			txtArea.Text = Math.Sqrt(p*(p-AB)*(p-AC)*(p-BC)).ToString();
+			Refresh();
+			if(txtAx.Text == "" || txtAy.Text == "" || txtBx.Text == "" || txtBy.Text == "" || txtCx.Text == "" || txtCy.Text == "")
+			{
+				ClearData();
+			}
+			else
+			{
+				clsPoint a = new clsPoint();
+				clsPoint b = new clsPoint();
+				clsPoint c = new clsPoint();
+				a.ix = int.Parse(txtAx.Text);
+				a.iy = int.Parse(txtAy.Text);
+				b.iy = int.Parse(txtBy.Text);
+				b.ix = int.Parse(txtBx.Text);
+				c.ix = int.Parse(txtCx.Text);
+				c.iy = int.Parse(txtCy.Text);
+				Space(a, b, c);
+				txtPerimeter.Text = clsRectangle.perimeter(a, b, c).ToString();
+				txtArea.Text = clsRectangle.area(a, b, c).ToString();
+				using (Graphics g = panel1.CreateGraphics())
+				{
+					 g.DrawLine(new Pen(Color.Black, 5), new Point(a.ix, a.iy), new Point(b.ix, b.iy));
+					 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(b.ix, b.iy));
+					 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(a.ix, a.iy));
+				}
+			}
 		}
 		
 		void Button2Click(object sender, EventArgs e)
@@ -136,9 +149,15 @@ namespace OOPpoint
 			this.txtBy.Text = "";
 			this.txtCx.Text = "";
 			this.txtCy.Text = "";
+			this.txtPerimeter.Text = "";
+			this.txtArea.Text = "";
+			this.txtAB.Text = "";
+			this.txtAC.Text = "";
+			this.txtBC.Text = "";
 		}
 		void BtnClearClick(object sender, EventArgs e)
 		{
+			
 			ClearData();
 		}
 	}

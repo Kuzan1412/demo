@@ -63,10 +63,6 @@ namespace OOPpoint
 			this.label17 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.label20 = new System.Windows.Forms.Label();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.label21 = new System.Windows.Forms.Label();
 			this.btnCalculator = new System.Windows.Forms.Button();
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnClear = new System.Windows.Forms.Button();
@@ -76,6 +72,7 @@ namespace OOPpoint
 			this.txtAB = new System.Windows.Forms.TextBox();
 			this.txtAC = new System.Windows.Forms.TextBox();
 			this.txtBC = new System.Windows.Forms.TextBox();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -107,7 +104,7 @@ namespace OOPpoint
 			this.txtAx.Location = new System.Drawing.Point(93, 25);
 			this.txtAx.Name = "txtAx";
 			this.txtAx.Size = new System.Drawing.Size(33, 22);
-			this.txtAx.TabIndex = 2;
+			this.txtAx.TabIndex = 0;
 			this.txtAx.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
 			// 
 			// txtBy
@@ -115,7 +112,7 @@ namespace OOPpoint
 			this.txtBy.Location = new System.Drawing.Point(149, 82);
 			this.txtBy.Name = "txtBy";
 			this.txtBy.Size = new System.Drawing.Size(36, 22);
-			this.txtBy.TabIndex = 5;
+			this.txtBy.TabIndex = 3;
 			this.txtBy.TextChanged += new System.EventHandler(this.TxtByTextChanged);
 			// 
 			// txtAy
@@ -123,7 +120,7 @@ namespace OOPpoint
 			this.txtAy.Location = new System.Drawing.Point(149, 24);
 			this.txtAy.Name = "txtAy";
 			this.txtAy.Size = new System.Drawing.Size(36, 22);
-			this.txtAy.TabIndex = 6;
+			this.txtAy.TabIndex = 1;
 			this.txtAy.TextChanged += new System.EventHandler(this.TxtAyTextChanged);
 			// 
 			// label3
@@ -272,7 +269,7 @@ namespace OOPpoint
 			this.txtCx.Location = new System.Drawing.Point(90, 130);
 			this.txtCx.Name = "txtCx";
 			this.txtCx.Size = new System.Drawing.Size(36, 22);
-			this.txtCx.TabIndex = 24;
+			this.txtCx.TabIndex = 4;
 			this.txtCx.TextChanged += new System.EventHandler(this.TxtCxTextChanged);
 			// 
 			// txtCy
@@ -280,7 +277,7 @@ namespace OOPpoint
 			this.txtCy.Location = new System.Drawing.Point(148, 130);
 			this.txtCy.Name = "txtCy";
 			this.txtCy.Size = new System.Drawing.Size(36, 22);
-			this.txtCy.TabIndex = 25;
+			this.txtCy.TabIndex = 5;
 			this.txtCy.TextChanged += new System.EventHandler(this.TxtCyTextChanged);
 			// 
 			// txtBx
@@ -288,7 +285,7 @@ namespace OOPpoint
 			this.txtBx.Location = new System.Drawing.Point(90, 82);
 			this.txtBx.Name = "txtBx";
 			this.txtBx.Size = new System.Drawing.Size(36, 22);
-			this.txtBx.TabIndex = 26;
+			this.txtBx.TabIndex = 2;
 			this.txtBx.TextChanged += new System.EventHandler(this.TxtBxTextChanged);
 			// 
 			// label17
@@ -318,44 +315,9 @@ namespace OOPpoint
 			this.label19.TabIndex = 29;
 			this.label19.Text = "]";
 			// 
-			// textBox9
-			// 
-			this.textBox9.Location = new System.Drawing.Point(326, 128);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(36, 22);
-			this.textBox9.TabIndex = 30;
-			// 
-			// label20
-			// 
-			this.label20.BackColor = System.Drawing.Color.Gold;
-			this.label20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.label20.Location = new System.Drawing.Point(235, 114);
-			this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(60, 39);
-			this.label20.TabIndex = 31;
-			this.label20.Text = "Space";
-			this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.label20.Click += new System.EventHandler(this.Label20Click);
-			// 
-			// textBox10
-			// 
-			this.textBox10.Location = new System.Drawing.Point(384, 128);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(36, 22);
-			this.textBox10.TabIndex = 32;
-			// 
-			// label21
-			// 
-			this.label21.Location = new System.Drawing.Point(368, 130);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(10, 23);
-			this.label21.TabIndex = 33;
-			this.label21.Text = ",";
-			// 
 			// btnCalculator
 			// 
-			this.btnCalculator.Location = new System.Drawing.Point(13, 193);
+			this.btnCalculator.Location = new System.Drawing.Point(13, 166);
 			this.btnCalculator.Name = "btnCalculator";
 			this.btnCalculator.Size = new System.Drawing.Size(84, 25);
 			this.btnCalculator.TabIndex = 34;
@@ -365,7 +327,7 @@ namespace OOPpoint
 			// 
 			// btnClose
 			// 
-			this.btnClose.Location = new System.Drawing.Point(118, 193);
+			this.btnClose.Location = new System.Drawing.Point(119, 166);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Size = new System.Drawing.Size(84, 25);
 			this.btnClose.TabIndex = 35;
@@ -375,7 +337,7 @@ namespace OOPpoint
 			// 
 			// btnClear
 			// 
-			this.btnClear.Location = new System.Drawing.Point(235, 193);
+			this.btnClear.Location = new System.Drawing.Point(280, 126);
 			this.btnClear.Name = "btnClear";
 			this.btnClear.Size = new System.Drawing.Size(84, 25);
 			this.btnClear.TabIndex = 36;
@@ -440,12 +402,22 @@ namespace OOPpoint
 			this.txtBC.Size = new System.Drawing.Size(102, 22);
 			this.txtBC.TabIndex = 42;
 			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.White;
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Location = new System.Drawing.Point(13, 197);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(707, 332);
+			this.panel1.TabIndex = 43;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.ClientSize = new System.Drawing.Size(903, 460);
+			this.ClientSize = new System.Drawing.Size(737, 749);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.txtBC);
 			this.Controls.Add(this.txtAC);
 			this.Controls.Add(this.txtAB);
@@ -455,10 +427,6 @@ namespace OOPpoint
 			this.Controls.Add(this.btnClear);
 			this.Controls.Add(this.btnClose);
 			this.Controls.Add(this.btnCalculator);
-			this.Controls.Add(this.label21);
-			this.Controls.Add(this.textBox10);
-			this.Controls.Add(this.label20);
-			this.Controls.Add(this.textBox9);
 			this.Controls.Add(this.label19);
 			this.Controls.Add(this.label18);
 			this.Controls.Add(this.label17);
@@ -493,6 +461,7 @@ namespace OOPpoint
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.TextBox txtBC;
 		private System.Windows.Forms.TextBox txtAC;
 		private System.Windows.Forms.TextBox txtAB;
@@ -502,10 +471,6 @@ namespace OOPpoint
 		private System.Windows.Forms.Button btnClear;
 		private System.Windows.Forms.Button btnClose;
 		private System.Windows.Forms.Button btnCalculator;
-		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.Label label20;
-		private System.Windows.Forms.TextBox textBox9;
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Label label17;
