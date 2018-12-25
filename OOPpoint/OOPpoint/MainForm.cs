@@ -18,6 +18,14 @@ namespace OOPpoint
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		public void Draw(clsPoint a, clsPoint b, clsPoint c)
+		{
+		using (Graphics g = panel1.CreateGraphics())
+		{
+			 g.DrawLine(new Pen(Color.Black, 5), new Point(a.ix, a.iy), new Point(b.ix, b.iy));
+			 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(b.ix, b.iy));
+			 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(a.ix, a.iy));
+		}}
 		public MainForm()
 		{
 			//
@@ -128,12 +136,7 @@ namespace OOPpoint
 				Space(a, b, c);
 				txtPerimeter.Text = clsRectangle.perimeter(a, b, c).ToString();
 				txtArea.Text = clsRectangle.area(a, b, c).ToString();
-				using (Graphics g = panel1.CreateGraphics())
-				{
-					 g.DrawLine(new Pen(Color.Black, 5), new Point(a.ix, a.iy), new Point(b.ix, b.iy));
-					 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(b.ix, b.iy));
-					 g.DrawLine(new Pen(Color.Black, 5), new Point(c.ix, c.iy), new Point(a.ix, a.iy));
-				}
+				Draw(a, b, c);
 			}
 		}
 		

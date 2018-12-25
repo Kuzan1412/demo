@@ -7,7 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
-
+using System.Drawing;
 namespace OOPpoint
 {
 	/// <summary>
@@ -51,6 +51,7 @@ namespace OOPpoint
 				C = value;
 			}
 		}
+		
 		public static double Space(clsPoint xA, clsPoint xB)
 		{
 			return Math.Sqrt(Math.Pow(xB.ix - xA.ix, 2) + Math.Pow(xB.iy - xA.iy, 2));

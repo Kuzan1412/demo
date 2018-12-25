@@ -1,0 +1,8 @@
+F:\demo\ManageStudent\ManageStudent\obj\Debug\ManageStudent.csprojResolveAssemblyReference.cache
+F:\demo\ManageStudent\ManageStudent\obj\Debug\ManageStudent.MainForm.resources
+F:\demo\ManageStudent\ManageStudent\obj\Debug\ManageStudent.csproj.GenerateResource.Cache
+F:\demo\ManageStudent\ManageStudent\bin\Debug\ManageStudent.exe
+F:\demo\ManageStudent\ManageStudent\bin\Debug\ManageStudent.pdb
+F:\demo\ManageStudent\ManageStudent\obj\Debug\ManageStudent.exe
+F:\demo\ManageStudent\ManageStudent\obj\Debug\ManageStudent.pdb
+F:\demo\ManageStudent\ManageStudent\bin\Debug\ManageStudent.exe.config
