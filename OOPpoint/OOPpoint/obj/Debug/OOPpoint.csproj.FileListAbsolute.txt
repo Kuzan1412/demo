@@ -1,0 +1,7 @@
+F:\demo\OOPpoint\OOPpoint\obj\Debug\OOPpoint.csprojResolveAssemblyReference.cache
+F:\demo\OOPpoint\OOPpoint\bin\Debug\OOPpoint.exe
+F:\demo\OOPpoint\OOPpoint\bin\Debug\OOPpoint.pdb
+F:\demo\OOPpoint\OOPpoint\obj\Debug\OOPpoint.exe
+F:\demo\OOPpoint\OOPpoint\obj\Debug\OOPpoint.pdb
+F:\demo\OOPpoint\OOPpoint\obj\Debug\OOPpoint.MainForm.resources
+F:\demo\OOPpoint\OOPpoint\obj\Debug\OOPpoint.csproj.GenerateResource.Cache
