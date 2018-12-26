@@ -1,0 +1,8 @@
+F:\demo\Town\Town\obj\Debug\Town.csprojResolveAssemblyReference.cache
+F:\demo\Town\Town\obj\Debug\Town.MainForm.resources
+F:\demo\Town\Town\obj\Debug\Town.csproj.GenerateResource.Cache
+F:\demo\Town\Town\bin\Debug\Town.exe.config
+F:\demo\Town\Town\bin\Debug\Town.exe
+F:\demo\Town\Town\bin\Debug\Town.pdb
+F:\demo\Town\Town\obj\Debug\Town.exe
+F:\demo\Town\Town\obj\Debug\Town.pdb
