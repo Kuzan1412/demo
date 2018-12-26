@@ -14,6 +14,8 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Web.Script.Serialization;
+using System.Text.RegularExpressions;
+
 namespace Town
 {
 	/// <summary>
@@ -38,19 +40,34 @@ namespace Town
 			dgshow.DataSource = source;
 			
 		}
-		
+		public bool IsAdrress(string a)
+		{
+			Regex regex = new Regex(@"[0-9]/[A-Za-z]");
+			return regex.IsMatch(a);
+		}
 		void Button1Click(object sender, System.EventArgs e)
 		{
+			if(bhulist.Count != 0)
+			{
+				for(int i = 0; i < bhulist.Count; i++)
+				{
+					if (txtHome.Text == bhulist[i].Home.ToString())
+					{
+						ClearData();
+						MessageBox.Show("This Address has existed!// Please check!");
+					}
+				}
+			}
 			int count = 0;
 			int n = int.Parse(txtNow.Text);
-			if (txtAge.Text == "" || txtDob.Text == "" || txtName.Text =="" || txtMajor.Text == "")
+			if (txtAge.Text == "" || txtDob.Text == "" || txtName.Text =="" || txtMajor.Text == "" || IsAdrress(txtHome.Text) == false)
 			{
 				ClearData();
 			}
 			else 
 			{
 				txtNow.Text = txtMember.Text;
-				human.Home = int.Parse(txtHome.Text);
+				human.Home = txtHome.Text;
 				human.Member = int.Parse(txtMember.Text);
 				human.Age = int.Parse(txtAge.Text);
 				human.Name = txtName.Text;
@@ -85,19 +102,8 @@ namespace Town
 		}
 		void TxtHomeTextChanged(object sender, System.EventArgs e)
 		{
-			int n;
-			try
-			{
-				n = int.Parse(txtHome.Text);
-				if(n < 0)
-				{
-					txtHome.Text = "";
-				}
-				
-			}catch
-			{
-				txtHome.Text = "";
-			}
+			
+		
 		}
 		
 		void TxtMemberTextChanged(object sender, System.EventArgs e)
@@ -196,13 +202,13 @@ namespace Town
 			txtName.Text = chuman.Name;
 			txtMember.Text = chuman.Member.ToString();
 			txtMajor.Text = chuman.Major;
-			txtHome.Text = chuman.Home.ToString();
+			txtHome.Text = chuman.Home;
 			txtAge.Text = chuman.Age.ToString();
 			txtDob.Text = chuman.Year.ToString();
 		}
 		void BtnEditClick(object sender, EventArgs e)
 		{
-			human.Home = int.Parse(txtHome.Text);
+			human.Home = txtHome.Text;
 			human.Member = int.Parse(txtMember.Text);
 			human.Age = int.Parse(txtAge.Text);
 			human.Name = txtName.Text;

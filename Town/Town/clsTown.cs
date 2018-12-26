@@ -15,7 +15,7 @@ namespace Town
 	/// </summary>
 	public class clsTown
 	{
-		protected int ihome;
+		protected string ihome;
 		private int imember;
 		protected int count;
 		public int Member
@@ -29,7 +29,7 @@ namespace Town
 				imember = value;
 			}
 		}
-		public int Home
+		public string Home
 		{
 			get
 			{
@@ -44,7 +44,7 @@ namespace Town
 		{
 			imember = 0;
 			count = 0;
-			ihome = 0;
+			
 		}
 	}
 }
