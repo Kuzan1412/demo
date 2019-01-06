@@ -1,0 +1,7 @@
+F:\demo\Hotel\Hotel\obj\Debug\Hotel.csprojResolveAssemblyReference.cache
+F:\demo\Hotel\Hotel\bin\Debug\Hotel.exe
+F:\demo\Hotel\Hotel\bin\Debug\Hotel.pdb
+F:\demo\Hotel\Hotel\obj\Debug\Hotel.exe
+F:\demo\Hotel\Hotel\obj\Debug\Hotel.pdb
+F:\demo\Hotel\Hotel\obj\Debug\Hotel.MainForm.resources
+F:\demo\Hotel\Hotel\obj\Debug\Hotel.csproj.GenerateResource.Cache
