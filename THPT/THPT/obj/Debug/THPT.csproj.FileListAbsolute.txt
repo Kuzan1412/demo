@@ -1,0 +1,7 @@
+F:\demo\THPT\THPT\bin\Debug\THPT.exe
+F:\demo\THPT\THPT\bin\Debug\THPT.pdb
+F:\demo\THPT\THPT\obj\Debug\THPT.csprojResolveAssemblyReference.cache
+F:\demo\THPT\THPT\obj\Debug\THPT.MainForm.resources
+F:\demo\THPT\THPT\obj\Debug\THPT.csproj.GenerateResource.Cache
+F:\demo\THPT\THPT\obj\Debug\THPT.exe
+F:\demo\THPT\THPT\obj\Debug\THPT.pdb
