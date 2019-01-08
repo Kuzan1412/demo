@@ -1,0 +1,16 @@
+F:\demo\SWPaint\SWPaint\bin\Debug\SWPaint.exe
+F:\demo\SWPaint\SWPaint\bin\Debug\SWPaint.pdb
+F:\demo\SWPaint\SWPaint\obj\Debug\SWPaint.csprojResolveAssemblyReference.cache
+F:\demo\SWPaint\SWPaint\obj\Debug\SWPaint.MainForm.resources
+F:\demo\SWPaint\SWPaint\obj\Debug\SWPaint.csproj.GenerateResource.Cache
+F:\demo\SWPaint\SWPaint\obj\Debug\SWPaint.exe
+F:\demo\SWPaint\SWPaint\obj\Debug\SWPaint.pdb
+F:\demo\SWPaint\SWPaint\bin\Debug\SWPaint.exe.config
+C:\Users\user\Desktop\SWPaint\SWPaint\obj\Debug\SWPaint.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\SWPaint\SWPaint\obj\Debug\SWPaint.MainForm.resources
+C:\Users\user\Desktop\SWPaint\SWPaint\obj\Debug\SWPaint.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\SWPaint\SWPaint\obj\Debug\SWPaint.exe
+C:\Users\user\Desktop\SWPaint\SWPaint\bin\Debug\SWPaint.exe.config
+C:\Users\user\Desktop\SWPaint\SWPaint\bin\Debug\SWPaint.exe
+C:\Users\user\Desktop\SWPaint\SWPaint\bin\Debug\SWPaint.pdb
+C:\Users\user\Desktop\SWPaint\SWPaint\obj\Debug\SWPaint.pdb
