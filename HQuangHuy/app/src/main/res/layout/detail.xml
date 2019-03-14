@@ -11,11 +11,14 @@
         android:id="@+id/Layout">
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txtNameProduct"/>
+                android:text="@string/txtNameProduct"
+                android:layout_marginRight="15dp"
+                />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -23,10 +26,12 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
                 android:text="@string/txtCostProduct"/>
             <EditText
                 android:layout_width="wrap_content"
@@ -35,10 +40,12 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
                 android:text="@string/txtCodeProduct"/>
             <EditText
                 android:layout_width="wrap_content"

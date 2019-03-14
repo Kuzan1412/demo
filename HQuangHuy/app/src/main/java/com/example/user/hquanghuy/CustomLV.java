@@ -2,7 +2,9 @@ package com.example.user.hquanghuy;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -10,6 +12,7 @@ public class CustomLV extends AppCompatActivity {
     static ListView lvNew;
     static CustomAdapter adapter;
     static ArrayList<Product> arrSystem;
+    TextView txtBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +27,16 @@ public class CustomLV extends AppCompatActivity {
         adapter = new CustomAdapter(
                 CustomLV.this, R.layout.detail, arrSystem);
         lvNew.setAdapter(adapter);
-
+        txtBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void run() {
         lvNew = findViewById(R.id.idLV);
-
+        txtBack = findViewById(R.id.idbtnBack);
     }
 }

@@ -10,4 +10,5 @@
     <string name="txtCostProduct">Cost</string>
     <string name="txtCodeProduct">Code</string>
     <string name="txtNameStudent">Name</string>
+    <string name="txtBack"><![CDATA[<---]]></string>
 </resources>
