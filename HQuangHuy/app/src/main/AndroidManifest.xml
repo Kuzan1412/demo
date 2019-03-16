@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CustomLV" />
-        <activity android:name=".DetailInformation"></activity>
+        <activity android:name=".DetailInformation" />
+        <activity android:name=".EditDataActivity"></activity>
     </application>
 
 </manifest>

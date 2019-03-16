@@ -6,9 +6,11 @@
     <string name="NamePass">Password</string>
     <string name="NameBtn">Login</string>
     <string name="CaptionLV">The list of products</string>
-    <string name="txtNameProduct">Phone</string>
-    <string name="txtCostProduct">Cost</string>
-    <string name="txtCodeProduct">Code</string>
-    <string name="txtNameStudent">Name</string>
+    <string name="txtNameProduct">Phone: </string>
+    <string name="txtCostProduct">Cost: </string>
+    <string name="txtCodeProduct">Code: </string>
+    <string name="txtNameStudent">Name: </string>
     <string name="txtBack"><![CDATA[<---]]></string>
+    <string name="Student">Name</string>
+    <string name="btnUpdate">Update</string>
 </resources>

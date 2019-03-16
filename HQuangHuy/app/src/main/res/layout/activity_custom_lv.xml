@@ -16,14 +16,16 @@
             android:id="@+id/idbtnBack"
             android:textColor="@color/colorBackground"
             android:gravity="center"
-            android:layout_width="80dp"
+            android:layout_width="0dp"
+            android:layout_weight="6"
             android:layout_height="30dp"
             android:text="@string/txtBack"
             android:textStyle="bold"
             android:textSize="20dp"/>
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="25"
             android:text="@string/CaptionLV"
             android:textSize="25dp"
             android:gravity="center"
@@ -31,6 +33,13 @@
             android:background="@color/colorBackground"
             android:layout_marginBottom="5dp"
             />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_weight="6"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/idbtnAdd"/>
     </LinearLayout>
     <ListView
         android:id="@+id/idLV"

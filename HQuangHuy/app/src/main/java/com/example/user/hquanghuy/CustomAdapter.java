@@ -41,19 +41,20 @@ public class CustomAdapter  extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) mycontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(mylayout, null);
 
 
         TextView txtName = (TextView) convertView.findViewById(R.id.iddetailName);
-        txtName.setText(mylist.get(position).Name);
+        txtName.setText(mylist.get(position).getName());
 
         TextView txtCode = (TextView) convertView.findViewById(R.id.iddetailCode);
-        txtCode.setText(mylist.get(position).Code);
+        txtCode.setText(mylist.get(position).getCode());
 
         TextView txtCost = (TextView) convertView.findViewById(R.id.iddetailCost);
-        txtCost.setText(String.valueOf(mylist.get(position).Cost));
+        txtCost.setText(String.valueOf(mylist.get(position).getCost()));
+
 
         final Product model = mylist.get(position);
         ImageView imageView = (ImageView) convertView.findViewById(R.id.idIV);
@@ -76,7 +77,14 @@ public class CustomAdapter  extends BaseAdapter {
             }
         });
 
-
+        ImageView ivDelete = (ImageView) convertView.findViewById(R.id.idImgViewDelete);
+        ivDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomLV.arrSystem.remove(model);
+                CustomLV.adapter.notifyDataSetChanged();
+            }
+        });
 
         return convertView;
     }

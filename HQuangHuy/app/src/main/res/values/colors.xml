@@ -7,4 +7,5 @@
     <color name="colorBorder">#000000</color>
     <color name="colorElement">#80bfff</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
 </resources>
