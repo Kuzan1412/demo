@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -45,14 +46,14 @@ public class CustomAdapter  extends BaseAdapter {
         convertView = inflater.inflate(mylayout, null);
 
 
-        EditText edtName = (EditText) convertView.findViewById(R.id.iddetailName);
-        edtName.setText(mylist.get(position).Name);
+        TextView txtName = (TextView) convertView.findViewById(R.id.iddetailName);
+        txtName.setText(mylist.get(position).Name);
 
-        EditText edtCode = (EditText) convertView.findViewById(R.id.iddetailCode);
-        edtCode.setText(mylist.get(position).Code);
+        TextView txtCode = (TextView) convertView.findViewById(R.id.iddetailCode);
+        txtCode.setText(mylist.get(position).Code);
 
-        EditText edtCost = (EditText) convertView.findViewById(R.id.iddetailCost);
-        edtCost.setText(String.valueOf(mylist.get(position).Cost));
+        TextView txtCost = (TextView) convertView.findViewById(R.id.iddetailCost);
+        txtCost.setText(String.valueOf(mylist.get(position).Cost));
 
         final Product model = mylist.get(position);
         ImageView imageView = (ImageView) convertView.findViewById(R.id.idIV);
