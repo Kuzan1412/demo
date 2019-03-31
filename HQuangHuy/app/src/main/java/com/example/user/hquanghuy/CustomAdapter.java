@@ -62,19 +62,12 @@ public class CustomAdapter  extends BaseAdapter {
             @Override
             public void onClick(View v) {
                    Intent intent = new Intent(mycontext, DetailInformation.class);
-                        intent.putExtra("Contact", model);
-                        mycontext.startActivity(intent);
+                   intent.putExtra("POS", position);
+                   intent.putExtra("Contact", model);
+                   intent.putExtra("Update", model);
+                   mycontext.startActivity(intent);
                     }
 
-        });
-        LinearLayout linearLayout = (LinearLayout) convertView.findViewById(R.id.Layout);
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(mycontext, DetailInformation.class);
-                intent.putExtra("Contact", model);
-                mycontext.startActivity(intent);
-            }
         });
 
         ImageView ivDelete = (ImageView) convertView.findViewById(R.id.idImgViewDelete);

@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(onValidate())
                 {
-                    if (edtUser.getText().toString().equals("1706020029") && edtPass.getText().toString().equals("12345"))
+                    if (edtUser.getText().toString().equals("19") && edtPass.getText().toString().equals("12345"))
                     {   //Toast
                         Toast.makeText(LoginActivity.this, "Successfully", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(LoginActivity.this, CustomLV.class);

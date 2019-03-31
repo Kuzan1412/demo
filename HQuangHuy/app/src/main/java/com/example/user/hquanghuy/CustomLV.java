@@ -37,6 +37,7 @@ public class CustomLV extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         txtBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
