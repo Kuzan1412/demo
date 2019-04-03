@@ -4,30 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
     tools:context=".TableFragment">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
         <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Name_btn_Create"
+            android:layout_gravity="center"
+            android:background="@color/colorCreate"
             android:id="@+id/id_btn_CREATE">
         </Button>
-
-        <Button
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Name_btn_Pay"
-            android:id="@+id/id_btn_PAY">
-        </Button>
-
-
-    </LinearLayout>
 
     <!-- TODO: Update blank fragment layout -->
     <ListView

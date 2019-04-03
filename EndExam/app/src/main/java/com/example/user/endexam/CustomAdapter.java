@@ -15,7 +15,8 @@ public class CustomAdapter extends BaseAdapter {
 
     Context mycontext;
     int mylayout;
-    List<Product> mylist;
+    static  List<Product> mylist;
+
 
     public CustomAdapter(Context mycontext, int mylayout, List<Product> mylist) {
         this.mycontext = mycontext;
@@ -44,7 +45,6 @@ public class CustomAdapter extends BaseAdapter {
         LayoutInflater inflater = (LayoutInflater) mycontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(mylayout, null);
 
-
         TextView txtName = (TextView) convertView.findViewById(R.id.idtxtProName);
         txtName.setText(String.valueOf(mylist.get(position).getNamePro()));
 
@@ -58,6 +58,8 @@ public class CustomAdapter extends BaseAdapter {
         txtUnit.setText(String.valueOf(mylist.get(position).getUnitPro()));
 
 
+        Intent intent = new Intent(mycontext, PayMent.class);
+        intent.putExtra("Pro", 0);
         return convertView;
     }
 }

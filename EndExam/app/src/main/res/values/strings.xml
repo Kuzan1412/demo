@@ -24,4 +24,7 @@
     <string name="Name_btn_Remeber">Remember me</string>
     <string name="Name_btn_Clear">Clear</string>
     <string name="Name_btn_Returned">Returned</string>
+    <string name="ProQuatity">Quatity</string>
+    <string name="Name_btn_R">P_Returned</string>
+    <string name="Name_btn_NR">Pay_NR</string>
 </resources>

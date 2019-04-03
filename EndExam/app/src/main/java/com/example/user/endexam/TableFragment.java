@@ -18,7 +18,7 @@ public class TableFragment extends Fragment {
     static CustomAdapterTable adaptertab;
     static ArrayList<Table> arrTab;
     static ListView lvTab;
-    Button btnCreate, btnPay;
+    Button btnCreate;
     View mView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,19 +37,12 @@ public class TableFragment extends Fragment {
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getActivity().getApplication(), CreateTable.class);
                 startActivity(intent);
             }
         });
 
-        btnPay = mView.findViewById(R.id.id_btn_PAY);
-        btnPay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent intent = new Intent(getActivity().getApplication(), PayBill.class);
-                //startActivity(intent);
-            }
-        });
         return mView;
     }
 

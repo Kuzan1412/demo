@@ -17,6 +17,7 @@ public class CustomAdapterTable extends BaseAdapter {
     int mylayout;
     List<Table> mylist;
     MySQLite SQLite;
+    CustomAdapter customAdapter;
     public CustomAdapterTable(Context mycontext, int mylayout, List<Table> mylist) {
         this.mycontext = mycontext;
         this.mylayout = mylayout;
@@ -40,7 +41,7 @@ public class CustomAdapterTable extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) mycontext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(mylayout, null);
 
@@ -54,6 +55,7 @@ public class CustomAdapterTable extends BaseAdapter {
         TextView txtStatus = (TextView) convertView.findViewById(R.id.id_txt_DStatus_Table);
         txtStatus.setText(String.valueOf(mylist.get(position).getTabStatus()));
 
+
         final Table item = mylist.get(position);
         LinearLayout linearLayout = (LinearLayout) convertView.findViewById(R.id.idLayoutTable);
         linearLayout.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +63,17 @@ public class CustomAdapterTable extends BaseAdapter {
             public void onClick(View v) {
                 Intent intent =  new Intent(mycontext, InformationTable.class);
                 intent.putExtra("Table", item);
+                mycontext.startActivity(intent);
+            }
+        });
+
+        Button btnPay = (Button) convertView.findViewById(R.id.id_btn_PAY);
+        btnPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mycontext, PayMent.class);
+                intent.putExtra("Payment", item);
+                intent.putExtra("Pos", position);
                 mycontext.startActivity(intent);
             }
         });

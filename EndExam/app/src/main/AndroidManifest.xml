@@ -20,6 +20,8 @@
         <activity android:name=".AddProduct" />
         <activity android:name=".InformationTable" />
         <activity android:name=".CreateTable" />
+        <activity android:name=".PayMent" />
+        <activity android:name=".History"></activity>
     </application>
 
 </manifest>

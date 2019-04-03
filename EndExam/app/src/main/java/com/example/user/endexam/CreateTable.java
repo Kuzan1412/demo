@@ -26,7 +26,7 @@ public class CreateTable extends AppCompatActivity {
     Button btnCompletely;
     String mName = "";
     String mStatus = "Is Using";
-    String mQuatity = "";
+    int mQuatity = 1;
     int mSum = 20000;
 
     List<Table> tableList;
@@ -74,9 +74,10 @@ public class CreateTable extends AppCompatActivity {
             public void onClick(View v) {
                 if(getData())
                 {
-                    final Table table = new Table(mStatus, mName, mQuatity, mSum);
+                    final Table table = new Table(mStatus, mName, String.valueOf(mQuatity), mSum);
                     TableFragment.arrTab.add(table);
                     TableFragment.adaptertab.notifyDataSetChanged();
+                    finish();
             }}
         });
 
@@ -86,36 +87,49 @@ public class CreateTable extends AppCompatActivity {
 
         edtSum.setText("");
         edtStatus.setText("");
-        edtQuatity.setText("");
+        edtQuatity.setText("1");
     }
     public boolean getData()
     {
+        sqLite.addProduct("Coffee Joy", "20000");
+        sqLite.addProduct("Coffee Latte", "55000");
+        sqLite.addProduct("Coffee Moka", "50000");
+        sqLite.addProduct("Coffee Cherry", "83000");
+        sqLite.addProduct("Coffee Arabica", "91000");
         mName = spnName.getSelectedItem().toString();
-        mQuatity = edtQuatity.getText().toString();
+        mQuatity = Integer.parseInt(edtQuatity.getText().toString());
+
         if(mName == "Coffee Joy")
-        {
-            edtSum.setText("20000");
-        }
+    {
+        mSum = 20000 * mQuatity;
+        edtSum.setText(String.valueOf(mSum));
+    }
         if(mName == "Coffee Moka")
         {
-            edtSum.setText("50000");
+            mSum = 50000 * mQuatity;
+            edtSum.setText(String.valueOf(mSum));
+
         }
         if(mName == "Coffee Latte")
         {
-            edtSum.setText("55000");
+            mSum = 55000 * mQuatity;
+            edtSum.setText(String.valueOf(mSum));
         }
         if(mName == "Coffee Cherry")
         {
-            edtSum.setText("83000");
+            mSum = 83000 * mQuatity;
+            edtSum.setText(String.valueOf(mSum));
+
         }
-        mSum = Integer.parseInt(edtSum.getText().toString());
-        if(mSum < 0)
+
+        if(mName == "Coffee Abarica")
         {
-            return false;
+            mSum = 91000 * mQuatity;
+            edtSum.setText(String.valueOf(mSum));
         }
         if(mName.length() < 1)
             return false;
-        if(mQuatity.length() < 1)
+        if(mQuatity < 1)
             return false;
         return true;
 

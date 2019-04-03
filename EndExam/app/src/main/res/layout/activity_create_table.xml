@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:gravity="center"
     tools:context=".CreateTable">
 
     <LinearLayout
@@ -40,6 +42,7 @@
             android:layout_weight="3"
             android:layout_width="0dp"
             android:inputType="number"
+            android:text="1"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.user.endexam;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private String CodePro;
     private String NamePro;
     private String CostPro;
