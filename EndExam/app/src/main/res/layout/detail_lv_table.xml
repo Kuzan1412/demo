@@ -46,7 +46,6 @@
             android:layout_gravity="center"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/Name_btn_Del"
             android:background="@drawable/ic_delete_black_24dp"
             android:id="@+id/id_btn_DELETE">
         </Button>

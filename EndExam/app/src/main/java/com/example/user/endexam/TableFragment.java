@@ -12,19 +12,22 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class TableFragment extends Fragment {
     static CustomAdapterTable adaptertab;
-    static ArrayList<Table> arrTab;
+    static List<Table> arrTab;
     static ListView lvTab;
     Button btnCreate;
+    static MySQLite sqLite;
     View mView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
+        sqLite = new MySQLite(getContext());
         arrTab = new ArrayList<Table>();
 
         mView = inflater.inflate(R.layout.fragment_table, container, false);

@@ -29,6 +29,7 @@ public class CreateTable extends AppCompatActivity {
     int mQuatity = 1;
     int mSum = 20000;
 
+    static List<String> namePro;
     List<Table> tableList;
     List<Bill> bills;
     MySQLite sqLite;
@@ -43,7 +44,7 @@ public class CreateTable extends AppCompatActivity {
         //===============================================
 
 
-        List<String> namePro = new ArrayList<String>();
+        namePro = new ArrayList<String>();
         namePro.add("Coffee Latte");
         namePro.add("Coffee Moka");
         namePro.add("Coffee Joy");
@@ -75,6 +76,8 @@ public class CreateTable extends AppCompatActivity {
                 if(getData())
                 {
                     final Table table = new Table(mStatus, mName, String.valueOf(mQuatity), mSum);
+                    sqLite.addTable(mName, mSum);
+                    TableFragment.arrTab = sqLite.getAllTableCoffee();
                     TableFragment.arrTab.add(table);
                     TableFragment.adaptertab.notifyDataSetChanged();
                     finish();
@@ -91,11 +94,7 @@ public class CreateTable extends AppCompatActivity {
     }
     public boolean getData()
     {
-        sqLite.addProduct("Coffee Joy", "20000");
-        sqLite.addProduct("Coffee Latte", "55000");
-        sqLite.addProduct("Coffee Moka", "50000");
-        sqLite.addProduct("Coffee Cherry", "83000");
-        sqLite.addProduct("Coffee Arabica", "91000");
+
         mName = spnName.getSelectedItem().toString();
         mQuatity = Integer.parseInt(edtQuatity.getText().toString());
 

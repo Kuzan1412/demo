@@ -19,6 +19,7 @@ public class MySQLite extends SQLiteOpenHelper {
     public static final String PRODUCT_CODE = "CODE";
     public static final String PRODUCT_COST = "COST";
     public static final String PRODUCT_NAME = "NAME";
+
     //TABLE TCOFFEE
     public static final String TABLE_TCOFFEE = "TCOFFEE";
     public static final String TCOFFEE_ID = "ID";
@@ -36,6 +37,7 @@ public class MySQLite extends SQLiteOpenHelper {
     public SQLiteDatabase mDB;
     public MySQLite(Context context) {
         super(context, DBName, null, VERSION);
+        mDB = this.getWritableDatabase();
     }
 
     @Override
@@ -48,7 +50,6 @@ public class MySQLite extends SQLiteOpenHelper {
         db.execSQL(mTCoffeeQuery);
         db.execSQL(mBillQuery);
     }
-
 
     public List<Table> getAllTableCoffee(){
         List<Table> models = new ArrayList<>();
@@ -92,9 +93,10 @@ public class MySQLite extends SQLiteOpenHelper {
         return 0;
     }
 
-    public long addTable(String mName){
+    public long addTable(String mName, int mSum){
         ContentValues values = new ContentValues();
         values.put(TCOFFEE_NAME,mName);
+        values.put(TCOFFEE_SUM,mSum);
         long isSuccess = mDB.insert(TABLE_TCOFFEE,null,values);
         return isSuccess;
     }
@@ -129,10 +131,11 @@ public class MySQLite extends SQLiteOpenHelper {
         }
         return null;
     }
-    public long addProduct(String mName, String mCost){
+    public long addProduct(String mName, String mCost, String mCode){
         ContentValues values = new ContentValues();
         values.put(PRODUCT_NAME,mName);
         values.put(PRODUCT_COST, mCost);
+        values.put(PRODUCT_CODE, mCode);
         long isSuccess = mDB.insert(TABLE_PRODUCT,null,values);
         return isSuccess;
     }

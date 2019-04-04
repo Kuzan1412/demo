@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class AddProduct extends AppCompatActivity {
     EditText edtName, edtCode, edtCost;
 
+    MySQLite sqLite;
     Button btnSave;
     String mName = "", mCode = "", mUnit = "VND", mCost = "";
     @Override
@@ -19,14 +20,15 @@ public class AddProduct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
         run();
+        sqLite = new MySQLite(AddProduct.this);
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(CheckData())
                 {
                     final Product product = new Product(mCode, mName, mCost, mUnit);
+                    sqLite.addProduct(mName, mCode, mCost);
                     ProductFragment.arrSystem.add(product);
-
                     ProductFragment.adapter.notifyDataSetChanged();
                     Toast.makeText(AddProduct.this, "Successful", Toast.LENGTH_SHORT).show();
                     ClearData();
